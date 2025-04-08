@@ -1,1 +1,55 @@
 
+########################ESTRUCTURAS CONDICIONALES##############################
+# x=5
+# if x>5:
+#     print("x es mayor que 5")
+# elif x==5:
+#     print("x es igual que 5")
+    
+# else:
+#     print("x es menor que 5")
+    
+# print("afuera")
+#################################################################################
+# x=15
+# y=20
+# if x>10 and y>25:
+#     print("x es mayor y Y es mayor que 15")
+# if x>10 or y>25:
+#     print("X es mayor que 10 o Y es mayor que 25")
+# if not x>10:
+#     print("X no es mayor que 10")
+#------------------------------------------------------------------------------------
+# is_member=True
+# age=11
+# if is_member:
+#     if age>=15:
+#         print("Tienes acceso ya que eres miembro y mayor o igual a 15 años")
+#     else:
+#         print("no tienes acceso ya que eres miembro pero menor a 15 años")
+# else:
+#     print("no eres miembro Y NO TIENES ACCESO")
+#------------------------------------------------------------------------------------
+###############################EJERCICIO##############################################
+
+#Hacer un piedra papel o tijera CON dos jugadores
+print("piedra,papel o tijera")
+persona_1=input()
+print("piedra,papel o tijera")
+persona_2=input()
+if persona_1==persona_2:
+    print("hay empate")
+elif persona_1=="piedra" and persona_2=="tijera":
+    print("gana",persona_1)
+elif persona_1=="papel" and persona_2=="piedra":
+    print("gana", persona_1)
+elif persona_1=="tijera" and persona_2=="papel":
+    print("gana", persona_1)
+elif persona_2=="piedra" and persona_1=="tijera":
+    print("gana", persona_2)
+elif persona_2=="papel" and persona_1=="piedra":
+    print("gana", persona_2)
+elif persona_2=="tijera" and persona_1=="papel":
+    print("gana", persona_2)
+else:
+    print("complete la informacion para jugar")
